@@ -3,6 +3,9 @@ name: Check Expected Versions
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   validate_temurin:
     runs-on: ubuntu-latest
